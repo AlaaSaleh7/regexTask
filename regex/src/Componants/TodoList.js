@@ -14,7 +14,6 @@ export default function TodoList() {
         //to give the number tasks as Integer
         id: Math.floor(Math.random() * 1000),
         value: task,
-        isCompleted: false,
       };
       setTodoList([...todoList, taskInfo]);
     }
