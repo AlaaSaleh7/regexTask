@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import TodoList from "./TodoList";
 import { Alert } from "react-bootstrap";
+import "./login.css";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -27,7 +28,8 @@ export default function Login() {
   return (
     <>
       {todoList ? (
-        <form onSubmit={handleLogin}>
+        <form className="login-con" onSubmit={handleLogin}>
+          <h3>Login</h3>
           <div className="form-group">
             <label>Email</label>
             <input
@@ -48,7 +50,7 @@ export default function Login() {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <button type="submit" className="btn btn-dark btn-lg btn-block">
+          <button type="submit" className="btn">
             Login
           </button>
           {error && (

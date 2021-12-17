@@ -29,6 +29,7 @@ export default function TodoList() {
       <div className="todo-list">
         <h3>My Todo List</h3>
         <input
+          className="form-control"
           type="text"
           name="text"
           id="text"

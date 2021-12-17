@@ -33,10 +33,8 @@ export default function Register() {
   return (
     <>
       {login ? (
-        <form
-          class="container bg-warning text-dark"
-          onSubmit={handleFormSubmit}
-        >
+        <form class="register-con" onSubmit={handleFormSubmit}>
+          <h3>Register</h3>
           <div className="form-group">
             <label>Name</label>
             <input
@@ -90,7 +88,7 @@ export default function Register() {
               <option>Front-end</option>
             </Form.Control>
           </div>
-          <button type="submit" className="btn btn-dark btn-lg btn-block">
+          <button className="btn" type="submit">
             Register
           </button>
           <p className="forgot-password text-right">

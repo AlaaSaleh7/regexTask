@@ -2,15 +2,18 @@
   position: relative;
   background-color: #fff;
   width: 350px;
-}
-.todo-list input {
-  content: "";
+  padding: 20px;
+  white-space: nowrap;
 }
 .todo-list h3 {
-  background-color: #03a9f4;
+  background-color: #f05454;
   color: #fff;
   padding: 10px 20px;
   font-weight: 600;
+}
+.todo-list input {
+  padding-right: 40px;
+  width: 100%;
 }
 .todo-list ul {
   position: relative;
@@ -27,10 +30,26 @@
   border-bottom: none;
 }
 .todo-list ul li button {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 5px;
+  background: #f05945;
+  border: none;
+  color: #fff;
+  top: 16px;
+  right: -19px;
+}
+.add-btn button {
+  border-radius: 5px;
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  background: green;
+  color: #fff;
+  border: none;
 }

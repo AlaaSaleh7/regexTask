@@ -1,4 +1,4 @@
-.register-con {
+.login-con {
   position: relative;
   background-color: #fff;
   width: 350px;
@@ -10,7 +10,7 @@
   align-items: center;
   color: #fff;
 }
-.register-con h3 {
+.login-con h3 {
   background-color: #f05454;
   color: #fff;
   padding: 10px 20px;
